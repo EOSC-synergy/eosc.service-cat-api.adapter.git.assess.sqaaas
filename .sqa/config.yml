@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/john-shepherdson/eosc.service-cat-api.adapter:
+      branch: main
+      repo: https://github.com/john-shepherdson/eosc.service-cat-api.adapter.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ebony_peaceful_hawk.sh
+        container: qc.acc_forest_perky_panther
+  QC.Doc:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.arctic_aware_quoll.sh
+        container: qc.doc_kiwi_cheerful_tapir
+      github.com/john-shepherdson/eosc.service-cat-api.adapter git:
+        commands:
+        - /usr/bin/env sh .sqa/script.marigold_diplomatic_antelope.sh
+        container: qc.doc_cosmos_sincere_tiger
+      github.com/john-shepherdson/eosc.service-cat-api.adapter markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.turquoise_friendly_dugong.sh
+        container: qc.doc_cinnabar_proactive_lionfish
+  QC.Lic:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.dusk_focused_moth.sh
+        container: qc.lic_polar_bubbly_spren
+  QC.Met:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.cinnamon_responsible_chipmunk.sh
+        container: qc.met_copper_bubbly_armadillo
+  QC.Sty:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.emerald_diplomatic_spren.sh
+        container: qc.sty_pink_rational_alligator
+      github.com/john-shepherdson/eosc.service-cat-api.adapter jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.isabelline_sympathetic_platypus.sh
+        container: qc.sty_sand_honest_salamander
+  QC.Ver:
+    repos:
+      github.com/john-shepherdson/eosc.service-cat-api.adapter get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.forest_candid_osprey.sh
+        container: qc.ver_plum_shrewd_kingfisher
+timeout: 5400
