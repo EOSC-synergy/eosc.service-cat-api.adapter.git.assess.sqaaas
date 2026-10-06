@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter git:
         commands:
-        - /usr/bin/env sh .sqa/script.arctic_aware_seal.sh
-        container: qc.acc_incarnadine_practical_alligator
+        - /usr/bin/env sh .sqa/script.mist_articulate_rabbit.sh
+        container: qc.acc_malachite_amiable_quail
   QC.Doc:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.vermilion_intuitive_cobra.sh
-        container: qc.doc_caramel_dramatic_tiger
+        - /usr/bin/env sh .sqa/script.eggplant_outgoing_hornbill.sh
+        container: qc.doc_plum_reckless_meerkat
       github.com/john-shepherdson/eosc.service-cat-api.adapter git:
         commands:
-        - /usr/bin/env sh .sqa/script.navy_zealous_sparrow.sh
-        container: qc.doc_lavender_innocent_gibbon
+        - /usr/bin/env sh .sqa/script.purple_clever_bullfrog.sh
+        container: qc.doc_lavender_amiable_sloth
       github.com/john-shepherdson/eosc.service-cat-api.adapter markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnamon_ardent_dragonfly.sh
-        container: qc.doc_jasmine_tactful_orca
+        - /usr/bin/env sh .sqa/script.horizon_cheerful_kingfisher.sh
+        container: qc.doc_orchid_nurturing_osprey
   QC.Lic:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.vermilion_adventurous_antelope.sh
-        container: qc.lic_ivory_proactive_salamander
+        - /usr/bin/env sh .sqa/script.sapphire_devoted_kookaburra.sh
+        container: qc.lic_cyan_hopeful_barracuda
   QC.Met:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_audacious_pangolin.sh
-        container: qc.met_byzantium_devoted_badger
+        - /usr/bin/env sh .sqa/script.mulberry_smart_gnu.sh
+        container: qc.met_green_fair_penguin
   QC.Sty:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.violet_innocent_cobra.sh
-        container: qc.sty_fern_loyal_eagle
+        - /usr/bin/env sh .sqa/script.seafoam_elated_uakari.sh
+        container: qc.sty_pink_brilliant_wolverine
       github.com/john-shepherdson/eosc.service-cat-api.adapter jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.banana_foolish_leopard.sh
-        container: qc.sty_jade_inspired_wolverine
+        - /usr/bin/env sh .sqa/script.ebony_mature_reindeer.sh
+        container: qc.sty_mustard_serene_groundhog
   QC.Ver:
     repos:
       github.com/john-shepherdson/eosc.service-cat-api.adapter get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cerulean_determined_quail.sh
-        container: qc.ver_gamboge_zealous_hydra
+        - /usr/bin/env sh .sqa/script.sunset_scrappy_kiwi.sh
+        container: qc.ver_beige_spirited_ferret
 timeout: 5400
